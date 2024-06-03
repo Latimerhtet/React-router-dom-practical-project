@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--primary-color);
+}
+:root {
+  --primary-color: #354f52;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a.active {
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-color: var(--primary-color);
+  /* padding: 0 20px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav h2 {
+  padding: 0 20px;
+  color: #fff;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 24px 20px;
+}
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.center {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+}
+.container {
+  width: 600px;
+}
+.product img {
+  width: 200px;
+}
+.products-main {
+  margin-top: 30px;
+  padding: 50px;
+}
+.products-main h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.products-flexbox {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.product {
+  width: 250px;
+  border: 2px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  cursor: pointer;
+}
+.productDetail {
+  margin-top: 100px;
+  height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productDetail img {
+  width: 300px;
+}
+.sub-productDetail {
+  width: 700px;
+  display: flex;
+  gap: 30px;
+}
+/* .sub-productDetail .productDescription {
+  margin-top: 10px;
+} */
+.price {
+  font-weight: bold;
+}
+.productDescription button,
+.exploreBtn {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.15s;
+  outline: none;
+}
+.productDescription button:hover,
+.exploreBtn:hover {
+  padding: 9px 10px;
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.product:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.priceAnddetail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.detail {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .sub-productDetail {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .productDetail {
+    height: 100%;
+  }
+}
