@@ -55,6 +55,7 @@ nav h2 {
 }
 .product img {
   width: 200px;
+  height: 250px;
 }
 .products-main {
   margin-top: 30px;
@@ -89,11 +90,12 @@ nav h2 {
 }
 .productDetail img {
   width: 300px;
+  height: 350px;
 }
 .sub-productDetail {
   width: 700px;
   display: flex;
-  gap: 30px;
+  gap: 80px;
 }
 /* .sub-productDetail .productDescription {
   margin-top: 10px;
@@ -101,8 +103,14 @@ nav h2 {
 .price {
   font-weight: bold;
 }
+/* .productDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
 .productDescription button,
-.exploreBtn {
+.exploreBtn,
+.error button {
   padding: 10px;
   background-color: var(--primary-color);
   color: #fff;
@@ -113,7 +121,8 @@ nav h2 {
   outline: none;
 }
 .productDescription button:hover,
-.exploreBtn:hover {
+.exploreBtn:hover,
+.error button:hover {
   padding: 9px 10px;
   background-color: #fff;
   color: var(--primary-color);
@@ -121,6 +130,12 @@ nav h2 {
 }
 .product:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+.priceAndBack {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
 }
 .priceAnddetail {
   width: 100%;
@@ -142,4 +157,11 @@ nav h2 {
   .productDetail {
     height: 100%;
   }
+}
+
+.error {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
